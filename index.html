@@ -2,276 +2,231 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nicat Məlikov – Music Producer & Director</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0a0a;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
-    }
-    header, section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
+      background-color: #151515;
+      color: #e0e0e0;
+      line-height: 1.6;
+      padding: 0 20px 40px;
+      max-width: 1080px;
+      margin-left: auto;
+      margin-right: auto;
     }
     h1, h2 {
-      color: #ff4081;
+      color: #ff8800;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
-    .video-grid, .tv-grid {
+    .bio {
+      max-width: 720px;
+      margin: 20px auto 40px;
+      background: #222;
+      border-radius: 8px;
+      padding: 20px 30px;
+      box-shadow: 0 0 12px #ff8800aa;
+    }
+    .bio p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    .videos-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+      gap: 16px;
+      justify-items: center;
     }
-    .youtube-container {
-      position: relative;
-      cursor: pointer;
-      border-radius: 10px;
+    .video-card {
+      background: #222;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      box-shadow: 0 0 12px #ff8800aa;
+      width: 280px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease;
     }
-    .youtube-container img {
+    .video-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 18px #ff8800ff;
+    }
+    .video-thumb {
       width: 100%;
+      height: 158px; /* 16:9 aspect ratio for 280px width */
+      object-fit: cover;
       display: block;
     }
-    .play-button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 50px;
-      color: rgba(255, 255, 255, 0.8);
-      text-shadow: 0 0 15px #000;
-      pointer-events: none;
+    .video-title {
+      padding: 10px 15px 5px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
     }
-    .video-caption, .view-count {
-      margin-top: 6px;
-      font-size: 0.95em;
-      color: #ccc;
+    .video-views {
+      color: #ffbb55;
+      font-size: 0.9rem;
+      padding-bottom: 12px;
     }
     a {
-      color: #ff4081;
       text-decoration: none;
+      color: inherit;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Nicat Məlikov</h1>
-    <p>Music Producer · Director · Scriptwriter</p>
-  </header>
+  <h1>Nicat Məlikov</h1>
 
-  <!-- Music Video Director -->
+  <div class="bio">
+    <p>
+      Nicat Məlikov is an Azerbaijani music producer, composer, and director born on June 1, 1986, in Baku. With a background in philology and over 15 years of experience in music and video production, Nicat has collaborated with prominent Azerbaijani artists such as Rauf Əhmədov, Aygün Kazımova, Röya, Sevda Ələkbərzadə, and Samir Piriyev. Known for his work in both music videos and TV projects, he has contributed significantly to Azerbaijan’s contemporary music scene.
+    </p>
+  </div>
+
   <section id="music-video-director">
     <h2>Music Video Director</h2>
-    <div class="video-grid">
-
-      <!-- Each video block -->
-      <!-- Rauf - Mənfi qırx dərəcə -->
-      <div>
-        <p class="video-caption"><strong>Rauf – Mənfi qırx dərəcə</strong></p>
-        <div class="youtube-container" data-video-id="uvi_Kjpn0HE">
-          <img src="https://img.youtube.com/vi/uvi_Kjpn0HE/hqdefault.jpg" alt="Rauf – Mənfi qırx dərəcə">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+20M views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>Rauf & Röya – Olar</strong></p>
-        <div class="youtube-container" data-video-id="L6TYAMVWIiY">
-          <img src="https://img.youtube.com/vi/L6TYAMVWIiY/hqdefault.jpg" alt="Rauf & Röya – Olar">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+3.4M views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>AYGÜN & RAUF – Yaraşdın Mənə</strong></p>
-        <div class="youtube-container" data-video-id="J_iZvsscwOU">
-          <img src="https://img.youtube.com/vi/J_iZvsscwOU/hqdefault.jpg" alt="AYGÜN & RAUF – Yaraşdın Mənə">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+3.2M views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>Rauf & Aygün Kazımova – Aya</strong></p>
-        <div class="youtube-container" data-video-id="HY7a-IedOMs">
-          <img src="https://img.youtube.com/vi/HY7a-IedOMs/hqdefault.jpg" alt="Aya">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+2.1M views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>Kazımcan – Əqrəblər</strong></p>
-        <div class="youtube-container" data-video-id="N0_rQJkb5aI">
-          <img src="https://img.youtube.com/vi/N0_rQJkb5aI/hqdefault.jpg" alt="Əqrəblər">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+170K views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>Samir Piriyev – Səma Dəniz Bir də Mən</strong></p>
-        <div class="youtube-container" data-video-id="kzUR0KXyytg">
-          <img src="https://img.youtube.com/vi/kzUR0KXyytg/hqdefault.jpg" alt="Səma Dəniz">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+250K views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>Samir Piriyev – Inan</strong></p>
-        <div class="youtube-container" data-video-id="aSURf3V4T44">
-          <img src="https://img.youtube.com/vi/aSURf3V4T44/hqdefault.jpg" alt="Inan">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+12K views</p>
-      </div>
-
-      <div>
-        <p class="video-caption"><strong>KazımCan – O da belə getdi</strong></p>
-        <div class="youtube-container" data-video-id="SlSqi45ONa8">
-          <img src="https://img.youtube.com/vi/SlSqi45ONa8/hqdefault.jpg" alt="O da belə getdi">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+1.5M views</p>
-      </div>
-
+    <div class="videos-grid">
+      <a class="video-card" href="https://www.youtube.com/watch?v=uvi_Kjpn0HE&ab_channel=BakuMusicFactory" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/uvi_Kjpn0HE/hqdefault.jpg" alt="Rauf - Mənfi qırx dərəcə (-40)" />
+        <div class="video-title">Rauf - Mənfi qırx dərəcə (-40)</div>
+        <div class="video-views">+20M views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=L6TYAMVWIiY&ab_channel=R%C3%B6ya" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/L6TYAMVWIiY/hqdefault.jpg" alt="Rauf & Röya - Olar" />
+        <div class="video-title">Rauf & Röya - Olar</div>
+        <div class="video-views">+3.4M views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=J_iZvsscwOU&ab_channel=Ayg%C3%BCnKaz%C4%B1mova" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/J_iZvsscwOU/hqdefault.jpg" alt="AYGÜN & RAUF - Yaraşdın Mənə" />
+        <div class="video-title">AYGÜN & RAUF - Yaraşdın Mənə</div>
+        <div class="video-views">+3.2M views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=HY7a-IedOMs&ab_channel=Rauf" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/HY7a-IedOMs/hqdefault.jpg" alt="Rauf & Aygün Kazımova - Aya" />
+        <div class="video-title">Rauf & Aygün Kazımova - Aya</div>
+        <div class="video-views">+2.1M views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=N0_rQJkb5aI&ab_channel=Kaz%C4%B1mCan" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/N0_rQJkb5aI/hqdefault.jpg" alt="Kazımcan - Əqrəblər" />
+        <div class="video-title">Kazımcan - Əqrəblər</div>
+        <div class="video-views">+170K views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=kzUR0KXyytg&ab_channel=SamirPiriyev" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/kzUR0KXyytg/hqdefault.jpg" alt="Samir Piriyev - Səma Dəniz Bir də Mən" />
+        <div class="video-title">Samir Piriyev - Səma Dəniz Bir də Mən</div>
+        <div class="video-views">+250K views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=aSURf3V4T44&ab_channel=SamirPiriyev" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/aSURf3V4T44/hqdefault.jpg" alt="Samir Piriyev - Inan" />
+        <div class="video-title">Samir Piriyev - Inan</div>
+        <div class="video-views">+12K views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=SlSqi45ONa8&ab_channel=Kaz%C4%B1mCan" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/SlSqi45ONa8/hqdefault.jpg" alt="KazimCan - O da bele getdi" />
+        <div class="video-title">KazimCan - O da bele getdi</div>
+        <div class="video-views">+1.5M views</div>
+      </a>
     </div>
   </section>
 
-  <!-- Commercials -->
   <section id="commercials">
     <h2>Commercials</h2>
-    <div class="video-grid">
-      <!-- Similar to above: 6 entries -->
-      <!-- Example -->
-      <div>
-        <p class="video-caption"><strong>Unibank</strong></p>
-        <div class="youtube-container" data-video-id="qWHoaVKuYis">
-          <img src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-      </div>
-      <!-- Repeat other commercials the same way -->
+    <div class="videos-grid">
+      <a class="video-card" href="https://www.youtube.com/watch?v=qWHoaVKuYis" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" alt="Unibank" />
+        <div class="video-title">Unibank</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=AQ94w4pjN6w" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/AQ94w4pjN6w/hqdefault.jpg" alt="Birkart" />
+        <div class="video-title">Birkart</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=NRUp36OEDA4&list=PLD0XMNUPGIBUHBDT2xNTTfIgHyjOZ6CBK&index=15" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/NRUp36OEDA4/hqdefault.jpg" alt="Baku Electronics" />
+        <div class="video-title">Baku Electronics</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=hSaBYO5bfX4&list=PLD0XMNUPGIBUHBDT2xNTTfIgHyjOZ6CBK&index=15&ab_channel=BakuElectronics" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/hSaBYO5bfX4/hqdefault.jpg" alt="Baku Electronics 2" />
+        <div class="video-title">Baku Electronics 2</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=zPov0jDSSFA&list=PLD0XMNUPGIBUHBDT2xNTTfIgHyjOZ6CBK&index=17&ab_channel=TrendMusic" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/zPov0jDSSFA/hqdefault.jpg" alt="Kapital Bank Olar campaign" />
+        <div class="video-title">Kapital Bank Olar campaign</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=UdBeF5FD4vs&ab_channel=safarofftv" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/UdBeF5FD4vs/hqdefault.jpg" alt="NAR Mobile Olympics" />
+        <div class="video-title">NAR Mobile Olympics</div>
+      </a>
     </div>
   </section>
 
-  <!-- TV Projects -->
   <section id="tv-projects">
     <h2>TV Projects</h2>
-    <div class="video-grid">
-      <div>
-        <p class="video-caption"><strong>Bu Da Bu</strong> – Comedy series director</p>
-        <div class="youtube-container" data-video-id="ycLUn5n8b6E">
-          <img src="https://img.youtube.com/vi/ycLUn5n8b6E/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-      </div>
-      <div>
-        <p class="video-caption"><strong>Maşın Reality Show</strong> – Creative producer</p>
-        <a href="https://www.youtube.com/@MasnRealitiSou/videos" target="_blank">Watch channel</a>
-      </div>
-      <div>
-        <p class="video-caption"><strong>New Year Show</strong> – Director & scriptwriter</p>
-        <div class="youtube-container" data-video-id="8aXQx-jLUjo">
-          <img src="https://img.youtube.com/vi/8aXQx-jLUjo/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-      </div>
+    <div class="videos-grid">
+      <a class="video-card" href="https://www.youtube.com/watch?v=ycLUn5n8b6E&ab_channel=MGP%28MGroupProduction%29" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/ycLUn5n8b6E/hqdefault.jpg" alt="Bu Da Bu - Comedy TV-series" />
+        <div class="video-title">Bu Da Bu - Comedy TV-series</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/@MasnRealitiSou/videos" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/sqKlsTtHzD0/hqdefault.jpg" alt="«Мaşın» reality show" />
+        <div class="video-title">«Мaşın» reality show - Creative Producer</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=8aXQx-jLUjo&ab_channel=ATVMusic" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/8aXQx-jLUjo/hqdefault.jpg" alt="New Year - Director & Script Writer" />
+        <div class="video-title">New Year - Director & Script Writer</div>
+      </a>
     </div>
   </section>
 
-  <!-- Backstage & Others -->
-  <section id="backstage">
+  <section id="backstage-others">
     <h2>Backstage & Others</h2>
-    <div class="video-grid">
-      <div>
-        <p class="video-caption"><strong>Backstage – Music Video</strong></p>
-        <div class="youtube-container" data-video-id="qWHoaVKuYis">
-          <img src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-      </div>
-      <div>
-        <p class="video-caption"><strong>Backstage – Nar Mobile Commercial</strong></p>
-        <div class="youtube-container" data-video-id="m2EVi6VvanA">
-          <img src="https://img.youtube.com/vi/m2EVi6VvanA/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-      </div>
-      <div>
-        <p class="video-caption"><strong>Podcasts</strong></p>
-        <a href="https://www.youtube.com/@NILNewImageLabel/videos" target="_blank">Watch Podcasts</a>
-      </div>
+    <div class="videos-grid">
+      <a class="video-card" href="https://www.youtube.com/watch?v=qWHoaVKuYis" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" alt="Backstage of music video shooting" />
+        <div class="video-title">Backstage of music video shooting</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=m2EVi6VvanA" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/m2EVi6VvanA/hqdefault.jpg" alt="Backstage of Nar Mobile Olympics commercial" />
+        <div class="video-title">Backstage of Nar Mobile Olympics commercial</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/@NILNewImageLabel/videos" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://yt3.ggpht.com/ytc/AMLnZu-7F64snSgtrR9_P6C9FCXyOE2b9zV2n5v-FkV=s176-c-k-c0x00ffffff-no-rj" alt="Podcasts" />
+        <div class="video-title">Podcasts</div>
+      </a>
     </div>
   </section>
 
-  <!-- Music & Lyrics -->
   <section id="music-lyrics">
     <h2>Music & Lyrics</h2>
-    <div class="video-grid">
-      <div>
-        <div class="youtube-container" data-video-id="4BKBK-kdHS8">
-          <img src="https://img.youtube.com/vi/4BKBK-kdHS8/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+200K views</p>
-      </div>
-      <div>
-        <div class="youtube-container" data-video-id="NjvNZuN5rJs">
-          <img src="https://img.youtube.com/vi/NjvNZuN5rJs/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+300K views</p>
-      </div>
-      <div>
-        <div class="youtube-container" data-video-id="D3U7pj-D7Yg">
-          <img src="https://img.youtube.com/vi/D3U7pj-D7Yg/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+1M views</p>
-      </div>
-      <div>
-        <div class="youtube-container" data-video-id="N1s9_RQL6Zw">
-          <img src="https://img.youtube.com/vi/N1s9_RQL6Zw/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+250K views</p>
-      </div>
-      <div>
-        <div class="youtube-container" data-video-id="m_RPTLJ6o80">
-          <img src="https://img.youtube.com/vi/m_RPTLJ6o80/hqdefault.jpg">
-          <div class="play-button">▶</div>
-        </div>
-        <p class="view-count">+500K views</p>
-      </div>
+    <div class="videos-grid">
+      <a class="video-card" href="https://www.youtube.com/watch?v=4BKBK-kdHS8&ab_channel=SevdaYahyayeva" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/4BKBK-kdHS8/hqdefault.jpg" alt="+200K views" />
+        <div class="video-title">+200K views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=NjvNZuN5rJs&ab_channel=SevdaYahyayeva" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/NjvNZuN5rJs/hqdefault.jpg" alt="+300K views" />
+        <div class="video-title">+300K views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=D3U7pj-D7Yg&ab_channel=Kaz%C4%B1mCan" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/D3U7pj-D7Yg/hqdefault.jpg" alt="+1M views" />
+        <div class="video-title">+1M views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=N1s9_RQL6Zw&ab_channel=Sevda%C6%8Fl%C9%99kb%C9%99rzad%C9%99" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/N1s9_RQL6Zw/hqdefault.jpg" alt="+250K views" />
+        <div class="video-title">+250K views</div>
+      </a>
+      <a class="video-card" href="https://www.youtube.com/watch?v=m_RPTLJ6o80" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/m_RPTLJ6o80/hqdefault.jpg" alt="+500K views" />
+        <div class="video-title">+500K views</div>
+      </a>
     </div>
   </section>
-
-  <script>
-    document.querySelectorAll('.youtube-container').forEach(container => {
-      container.addEventListener('click', () => {
-        const videoId = container.getAttribute('data-video-id');
-        const iframe = document.createElement('iframe');
-        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-        iframe.allowFullscreen = true;
-        iframe.frameBorder = "0";
-        iframe.style.width = "100%";
-        iframe.style.height = "200px";
-        container.innerHTML = '';
-        container.appendChild(iframe);
-      });
-    });
-  </script>
 
 </body>
 </html>
