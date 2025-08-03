@@ -122,3 +122,128 @@
 
 <header>
   <h1>Nicat Məlikov</h1>
+  <nav>
+    <a href="#intro">About</a>
+    <a href="#music-video-director">Music Videos</a>
+    <a href="#commercials">Commercials</a>
+  </nav>
+</header>
+
+<main>
+  <section id="intro">
+    <img src="Nicat_Məlikov.png" alt="Nicat Məlikov" />
+    <p>
+      Nicat Məlikov is an Azerbaijani composer, music producer, and music video director.  
+      With a background in philology and extensive experience in the music industry since 2005,  
+      he has worked with renowned artists such as Rauf Əhmədov, Aygün Kazımova, Röya Ayxan, Sevda Ələkbərzadə, and Samir Cavadzadə.  
+      Nicat specializes in songwriting, producing, and directing music videos, blending creativity with technical expertise.
+    </p>
+  </section>
+
+  <section id="music-video-director">
+    <h2>Music Video Director</h2>
+    <div class="video-grid">
+      <div class="youtube-container" data-video-id="uvi_Kjpn0HE">
+        <img src="https://img.youtube.com/vi/uvi_Kjpn0HE/hqdefault.jpg" alt="Rauf - Mənfi qırx dərəcə (-40)" />
+        <div class="play-button">▶</div>
+      </div>
+      <div class="youtube-container" data-video-id="L6TYAMVWIiY">
+        <img src="https://img.youtube.com/vi/L6TYAMVWIiY/hqdefault.jpg" alt="Rauf & Röya - Olar" />
+        <div class="play-button">▶</div>
+      </div>
+      <div class="youtube-container" data-video-id="J_iZvsscwOU">
+        <img src="https://img.youtube.com/vi/J_iZvsscwOU/hqdefault.jpg" alt="AYGÜN & RAUF - Yaraşdın Mənə" />
+        <div class="play-button">▶</div>
+      </div>
+      <div class="youtube-container" data-video-id="HY7a-IedOMs">
+        <img src="https://img.youtube.com/vi/HY7a-IedOMs/hqdefault.jpg" alt="Rauf & Aygün Kazımova - Aya" />
+        <div class="play-button">▶</div>
+      </div>
+      <div class="youtube-container" data-video-id="N0_rQJkb5aI">
+        <img src="https://img.youtube.com/vi/N0_rQJkb5aI/hqdefault.jpg" alt="Kazımcan - Əqrəblər" />
+        <div class="play-button">▶</div>
+      </div>
+      <div class="youtube-container" data-video-id="kzUR0KXyytg">
+        <img src="https://img.youtube.com/vi/kzUR0KXyytg/hqdefault.jpg" alt="Samir Piriyev - Səma Dəniz Bir də Mən" />
+        <div class="play-button">▶</div>
+      </div>
+      <div class="youtube-container" data-video-id="aSURf3V4T44">
+        <img src="https://img.youtube.com/vi/aSURf3V4T44/hqdefault.jpg" alt="Samir Piriyev - Inan" />
+        <div class="play-button">▶</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="commercials">
+    <h2>Commercials</h2>
+    <div class="video-grid">
+      <div>
+        <p><strong>Unibank</strong></p>
+        <div class="youtube-container" data-video-id="qWHoaVKuYis">
+          <img src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" alt="Unibank" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+      <div>
+        <p><strong>Birkart</strong></p>
+        <div class="youtube-container" data-video-id="AQ94w4pjN6w">
+          <img src="https://img.youtube.com/vi/AQ94w4pjN6w/hqdefault.jpg" alt="Birkart" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+      <div>
+        <p><strong>Baku Electronics</strong></p>
+        <div class="youtube-container" data-video-id="NRUp36OEDA4">
+          <img src="https://img.youtube.com/vi/NRUp36OEDA4/hqdefault.jpg" alt="Baku Electronics" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+      <div>
+        <p><strong>Baku Electronics 2</strong></p>
+        <div class="youtube-container" data-video-id="hSaBYO5bfX4">
+          <img src="https://img.youtube.com/vi/hSaBYO5bfX4/hqdefault.jpg" alt="Baku Electronics 2" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+      <div>
+        <p><strong>Kapital Bank – Olar campaign</strong></p>
+        <div class="youtube-container" data-video-id="zPov0jDSSFA">
+          <img src="https://img.youtube.com/vi/zPov0jDSSFA/hqdefault.jpg" alt="Kapital Bank Olar" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+      <div>
+        <p><strong>NAR Mobile – Olympics</strong></p>
+        <div class="youtube-container" data-video-id="UdBeF5FD4vs">
+          <img src="https://img.youtube.com/vi/UdBeF5FD4vs/hqdefault.jpg" alt="NAR Mobile Olympics" />
+          <div class="play-button">▶</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Nicat Məlikov. All rights reserved.
+</footer>
+
+<script>
+  document.querySelectorAll('.youtube-container').forEach(container => {
+    container.addEventListener('click', () => {
+      const videoId = container.getAttribute('data-video-id');
+      const iframe = document.createElement('iframe');
+      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.width = '100%';
+      iframe.style.height = '160px';
+      iframe.style.borderRadius = '8px';
+      container.innerHTML = '';
+      container.appendChild(iframe);
+    });
+  });
+</script>
+
+</body>
+</html>
