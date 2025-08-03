@@ -2,146 +2,166 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8" />
-  <title>Nicat Məlikov</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicat Məlikov – Music Producer</title>
   <style>
-    body { font-family: "Georgia", serif; line-height: 1.6; margin: 20px; max-width: 900px; }
-    h1, h2 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
-    table { border-collapse: collapse; width: 100%; margin-top: 1em; }
-    th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
-    th { background-color: #eee; }
-    img { float: right; margin-left: 15px; width: 250px; }
-    .infobox { border: 1px solid #aaa; padding: 10px; max-width: 270px; float: right; margin-left: 15px; font-size: 0.9em; background-color: #f9f9f9; }
-    .infobox dt { font-weight: bold; margin-top: 10px; }
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 15px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      padding: 30px 25px;
+      text-align: center;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #ff4081;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin: 0 0 10px;
+      color: #ff4081;
+    }
+
+    p.profession {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #bbb;
+      margin: 0 0 25px;
+    }
+
+    .info {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .info dt {
+      font-weight: 600;
+      color: #ff4081;
+      margin-top: 12px;
+    }
+
+    .info dd {
+      margin: 0 0 10px 0;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .work-list {
+      text-align: left;
+      padding-left: 20px;
+      color: #ddd;
+      font-size: 0.95rem;
+    }
+
+    .work-list li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer contact buttons */
+    .contact {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .contact a {
+      color: #ff4081;
+      border: 2px solid #ff4081;
+      padding: 10px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 1rem;
+    }
+
+    .contact a:hover {
+      background-color: #ff4081;
+      color: #121212;
+    }
+
+    @media (max-width: 450px) {
+      .card {
+        padding: 20px 15px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-<h1>Nicat Məlikov</h1>
+  <div class="card">
+    <div class="photo">
+      <img src="nicat_melikov.png" alt="Nicat Məlikov" />
+    </div>
 
-<div class="infobox">
-  <img src="Nicat_Melikov.png" alt="Nicat Məlikov" />
-  <dl>
-    <dt>Doğum tarixi:</dt><dd>1.06.1986</dd>
-    <dt>Doğum yeri:</dt><dd>Bakı, Azərbaycan</dd>
-    <dt>Vətəndaşlığı:</dt><dd>Azərbaycan</dd>
-    <dt>Milliyyəti:</dt><dd>Azərbaycanlı</dd>
-    <dt>Ixtisası:</dt><dd>Filoloq</dd>
-    <dt>Təhsili:</dt><dd>Ali təhsil</dd>
-    <dt>Fəaliyyəti:</dt><dd>Kompozitor, Rejissor</dd>
-    <dt>Fəaliyyət illəri:</dt><dd>2005 - indiyə kimi</dd>
-  </dl>
-</div>
+    <h1>Nicat Məlikov</h1>
+    <p class="profession">Music Producer & Composer</p>
 
-<p><strong>Nicat Məlikov</strong> (1 iyun 1986, Bakı, Azərbaycan SSR) — Azərbaycan bəstəkarı, prodüseri və rejissoru. Rauf Ahmədov, Aygün Kazımova, Röya Ayxan, Sevda Ələkbərzade, Samir Cavadzadə və başqaları kimi görkəmli sənətkarların söz və musiqi müəllifidir.</p>
+    <dl class="info">
+      <dt>Doğum tarixi:</dt>
+      <dd>1 iyun 1986</dd>
 
-<h2>Həyatı</h2>
-<p>Nicat Məlikov Azərbaycanın Bakı şəhərində anadan olub. 1993-cü ildə 46 saylı orta məktəbin birinci sinfinə, 2004-cü ildə Bakı Dövlət Universitetinin Filologiya fakültəsinə daxil olub. 2006-2009-cu illərdə Nicat Məlikov “M Group Production” şirkətinin əməkdaşı olub. Nicat Məlikov "Maşın Şou" kimi layihələrdə baş redaktor vəzifəsində çalışıb. 2009-cu ildən başlayaraq Nicat Məlikovun mahnı yazmağa daha çox diqqət ayırması onun bəstəkarlıq peşəsinə başlamasına səbəb olub.</p>
+      <dt>Yerləşmə:</dt>
+      <dd>Bakı, Azərbaycan</dd>
 
-<p>Onun ilk işlərindən biri Azərbaycandan olan ilk Eurovision iştirakçısı - Samir Cavadzadənin ifa etdiyi "Guci-guci" mahnısı olub. Bundan sonra Nicat Məlikov bütün vaxtını və diqqətini gənc istedad Rauf Əhmədovun yetişdirilməsinə yönəltdi. Rauf Əhmədov üçün ilk böyük hit Nicat Məlikovun yazdığı "Mənfi 40 (-40)" mahnısı oldu.</p>
+      <dt>İxtisas:</dt>
+      <dd>Kompozitor, Rejissor</dd>
 
-<p>Hazırda Nicat Məlikov Aygün Kazımova, Röya, Sevda Ələkbərzadə, Samir Cavadzadə, Rauf Əhmədov və başqaları kimi Azərbaycanın görkəmli və əməkdar artistlərinin söz və musiqi müəllifidir.</p>
+      <dt>Fəaliyyət illəri:</dt>
+      <dd>2005 - indiyə kimi</dd>
+    </dl>
 
-<h2>Kompozitor karyerası</h2>
-<p>Aşağıdakı bəstələrin musiqisi və sözlərinin müəllifi Nicat Məlikovdur:</p>
-<ol>
-  <li>Rauf - -40 (Mənfi qırx dərəcə)</li>
-  <li>Rauf & Aygün Kazımova - Yaraşdın mənə</li>
-  <li>Rauf & Röya - Olar</li>
-  <li>Rauf - Əsas Bass</li>
-  <li>Rauf & Aygün Kazımova - Aya</li>
-  <li>Rauf - Davam ya tamam (Davam ya Tamam OST)</li>
-  <li>Rauf - Gec-tez</li>
-  <li>Rauf - Nərgiz gülü</li>
-  <li>Rauf - Limonlu çay</li>
-  <li>Rauf - Dəyişdi</li>
-  <li>Rauf - Sev</li>
-  <li>Rauf - Ən vətən</li>
-  <li>Rauf - Sən hərşeysən</li>
-  <li>Rauf - Əfv</li>
-  <li>Rauf - Cəmilə</li>
-  <li>Rauf - Bilirsən</li>
-  <li>Rauf - H2O</li>
-  <li>Kazımcan - Əqrəblər</li>
-  <li>Samir Cavadzade - Guci Guci</li>
-  <li>Samir Piriyev - Səma Dəniz Bir də Mən</li>
-  <li>Samir Piriyev - По любви</li>
-  <li>Samir Piriyev - Oxudum</li>
-  <li>Sevda Ələkbərzadə — Ən</li>
-  <li>Aygün Kazımova - De</li>
-  <li>Samir Piriyev - İnan</li>
-</ol>
+    <h3>Seçilmiş İşlər</h3>
+    <ul class="work-list">
+      <li>Rauf - Mənfi qırx dərəcə (-40)</li>
+      <li>Rauf & Aygün Kazımova - Yaraşdın mənə</li>
+      <li>Samir Cavadzade - Guci Guci</li>
+      <li>Rauf & Röya - Olar</li>
+      <li>Sevda Ələkbərzadə — Ən</li>
+    </ul>
 
-<table>
-  <caption>Buraxılan mahnılar</caption>
-  <thead>
-    <tr>
-      <th>Buraxılan il</th>
-      <th>Mahnının adı</th>
-      <th>Sözlərin müəllifi</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>2009</td><td>Samir Cavadzade - Guci Guci</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2011</td><td>Rauf - Cəmilə</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2014</td><td>Rauf - -40 (Mənfi qırx dərəcə)</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2015</td><td>Rauf - Nərgiz gülü</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2015</td><td>Rauf - Limonlu çay</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2015</td><td>Rauf - Dəyişdi</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2016</td><td>Rauf - Davam ya tamam (Davam ya Tamam OST)</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2016</td><td>Rauf - Gec-tez</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2017</td><td>Rauf - Sən hərşeysən</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2017</td><td>Rauf - H2O</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2017</td><td>Kazımcan - Əqrəblər</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2018</td><td>Rauf - Əsas Bass</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2018</td><td>Rauf & Aygün Kazımova - Yaraşdın mənə</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2019</td><td>Rauf - Sev</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2019</td><td>Samir Piriyev - Səma Dəniz Bir də Mən</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2019</td><td>Samir Piriyev - По любви</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2019</td><td>Samir Piriyev - Oxudum</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2020</td><td>Rauf & Aygün Kazımova - Aya</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2020</td><td>Sevda Ələkbərzadə — Ən</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2020</td><td>Samir Piriyev - İnan</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2021</td><td>Rauf & Röya - Olar</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2021</td><td>Rauf - Ən vətən</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2021</td><td>Rauf - Əfv</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2021</td><td>Rauf - Bilirsən</td><td>Nicat Məlikov</td></tr>
-    <tr><td>2021</td><td>Aygün Kazımova - De</td><td>Nicat Məlikov</td></tr>
-  </tbody>
-</table>
-
-<h2>Rejissor karyerası</h2>
-
-<table>
-  <caption>Rejissor olaraq işləri</caption>
-  <thead>
-    <tr>
-      <th>İl</th>
-      <th>Mahnı</th>
-      <th>Qeyd</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>2014</td><td>Rauf - Mənfi qırx dərəcə (-40)</td><td>Nümunə</td></tr>
-    <tr><td>2015</td><td>Rauf - Nərgiz gülü</td><td>Nümunə</td></tr>
-    <tr><td>2017</td><td>Kazımcan - Əqrəblər</td><td>Nümunə</td></tr>
-    <tr><td>2018</td><td>Rauf & Aygün Kazımova - Yaraşdın mənə</td><td>Nümunə</td></tr>
-    <tr><td>2018</td><td>Rauf & Aygün Kazımova - Aya</td><td>Nümunə</td></tr>
-    <tr><td>2019</td><td>Samir Piriyev - Səma Dəniz Bir də Mən</td><td>Nümunə</td></tr>
-    <tr><td>2020</td><td>Samir Piriyev - İnan</td><td>Nümunə</td></tr>
-    <tr><td>2021</td><td>Rauf & Röya - Olar</td><td>Nümunə</td></tr>
-  </tbody>
-</table>
-
-<ol>
-  <li>Rauf - Mənfi qırx dərəcə (-40)</li>
-  <li>Rauf & Röya - Olar</li>
-  <li>Rauf & Aygün Kazımova - Yaraşdın mənə</li>
-  <li>Rauf & Aygün Kazımova - Aya</li>
-  <li>Kazımcan - Əqrəblər</li>
-  <li>Rauf - Nərgiz gülü</li>
-  <li>Samir Piriyev - Səma Dəniz Bir də Mən</li>
-  <li>Samir Piriyev - İnan</li>
-</ol>
+    <div class="contact">
+      <a href="mailto:nicat@example.com">Email</a>
+      <a href="https://www.instagram.com/nicatmelikov" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/nicatmelikov" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
 
 </body>
 </html>
