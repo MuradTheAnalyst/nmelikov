@@ -46,7 +46,7 @@
     }
     main {
       flex-grow: 1;
-      max-width: 900px;
+      max-width: 1100px;
       margin: 30px auto;
       padding: 0 20px;
     }
@@ -61,7 +61,6 @@
       margin-bottom: 20px;
       font-size: 1.8rem;
     }
-    /* Intro */
     #intro {
       text-align: center;
     }
@@ -79,17 +78,17 @@
       max-width: 650px;
       margin: 0 auto;
     }
-    /* YouTube embed grid */
     .video-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 25px;
       justify-items: center;
     }
     .youtube-container {
       cursor: pointer;
       position: relative;
-      width: 280px;
+      width: 100%;
+      max-width: 280px;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(255, 64, 129, 0.4);
@@ -117,28 +116,6 @@
       font-size: 0.9rem;
       border-top: 1px solid #ff4081;
     }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 10px;
-      }
-      nav a {
-        margin-left: 0;
-        margin-right: 15px;
-      }
-      #intro img {
-        width: 150px;
-        height: 150px;
-      }
-      .youtube-container {
-        width: 100%;
-        max-width: 320px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -147,7 +124,7 @@
   <h1>Nicat Məlikov</h1>
   <nav>
     <a href="#intro">About</a>
-    <a href="#music-video-director">Music Video Director</a>
+    <a href="#music-video-director">Music Videos</a>
   </nav>
 </header>
 
@@ -167,19 +144,37 @@
     <div class="video-grid">
       <!-- Video 1 -->
       <div class="youtube-container" data-video-id="uvi_Kjpn0HE" title="Rauf - Mənfi qırx dərəcə (-40)">
-        <img src="https://img.youtube.com/vi/uvi_Kjpn0HE/hqdefault.jpg" alt="Rauf - Mənfi qırx dərəcə (-40) Music Video Thumbnail" />
+        <img src="https://img.youtube.com/vi/uvi_Kjpn0HE/hqdefault.jpg" alt="Rauf - Mənfi qırx dərəcə (-40)" />
         <div class="play-button">▶</div>
       </div>
-
       <!-- Video 2 -->
       <div class="youtube-container" data-video-id="L6TYAMVWIiY" title="Rauf & Röya - Olar">
-        <img src="https://img.youtube.com/vi/L6TYAMVWIiY/hqdefault.jpg" alt="Rauf & Röya - Olar Music Video Thumbnail" />
+        <img src="https://img.youtube.com/vi/L6TYAMVWIiY/hqdefault.jpg" alt="Rauf & Röya - Olar" />
         <div class="play-button">▶</div>
       </div>
-
       <!-- Video 3 -->
       <div class="youtube-container" data-video-id="J_iZvsscwOU" title="AYGÜN & RAUF - Yaraşdın Mənə">
-        <img src="https://img.youtube.com/vi/J_iZvsscwOU/hqdefault.jpg" alt="AYGÜN & RAUF - Yaraşdın Mənə Music Video Thumbnail" />
+        <img src="https://img.youtube.com/vi/J_iZvsscwOU/hqdefault.jpg" alt="AYGÜN & RAUF - Yaraşdın Mənə" />
+        <div class="play-button">▶</div>
+      </div>
+      <!-- Video 4 -->
+      <div class="youtube-container" data-video-id="HY7a-IedOMs" title="Rauf & Aygün Kazımova - Aya">
+        <img src="https://img.youtube.com/vi/HY7a-IedOMs/hqdefault.jpg" alt="Rauf & Aygün Kazımova - Aya" />
+        <div class="play-button">▶</div>
+      </div>
+      <!-- Video 5 -->
+      <div class="youtube-container" data-video-id="N0_rQJkb5aI" title="Kazımcan - Əqrəblər">
+        <img src="https://img.youtube.com/vi/N0_rQJkb5aI/hqdefault.jpg" alt="Kazımcan - Əqrəblər" />
+        <div class="play-button">▶</div>
+      </div>
+      <!-- Video 6 -->
+      <div class="youtube-container" data-video-id="kzUR0KXyytg" title="Samir Piriyev - Səma Dəniz Bir də Mən">
+        <img src="https://img.youtube.com/vi/kzUR0KXyytg/hqdefault.jpg" alt="Samir Piriyev - Səma Dəniz Bir də Mən" />
+        <div class="play-button">▶</div>
+      </div>
+      <!-- Video 7 -->
+      <div class="youtube-container" data-video-id="aSURf3V4T44" title="Samir Piriyev - Inan">
+        <img src="https://img.youtube.com/vi/aSURf3V4T44/hqdefault.jpg" alt="Samir Piriyev - Inan" />
         <div class="play-button">▶</div>
       </div>
     </div>
