@@ -15,7 +15,36 @@
       max-width: 1080px;
       margin-left: auto;
       margin-right: auto;
+      scroll-behavior: smooth;
     }
+    /* Sticky top menu */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #222;
+      padding: 10px 20px;
+      box-shadow: 0 2px 8px #000;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+    nav a {
+      color: #ff8800;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color: #ff8800;
+      color: #151515;
+      outline: none;
+    }
+
     h1, h2 {
       color: #ff8800;
       text-align: center;
@@ -82,13 +111,22 @@
 </head>
 <body>
 
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#music-video-director">Music Video Director</a>
+    <a href="#commercials">Commercials</a>
+    <a href="#tv-projects">TV Projects</a>
+    <a href="#backstage-others">Backstage & Others</a>
+    <a href="#music-lyrics">Music & Lyrics</a>
+  </nav>
+
   <h1>Nicat Məlikov</h1>
 
-  <div class="bio">
+  <section id="bio" class="bio">
     <p>
       Nicat Məlikov is an Azerbaijani music producer, composer, and director born on June 1, 1986, in Baku. With a background in philology and over 15 years of experience in music and video production, Nicat has collaborated with prominent Azerbaijani artists such as Rauf Əhmədov, Aygün Kazımova, Röya, Sevda Ələkbərzadə, and Samir Piriyev. Known for his work in both music videos and TV projects, he has contributed significantly to Azerbaijan’s contemporary music scene.
     </p>
-  </div>
+  </section>
 
   <section id="music-video-director">
     <h2>Music Video Director</h2>
@@ -173,8 +211,8 @@
         <img class="video-thumb" src="https://img.youtube.com/vi/ycLUn5n8b6E/hqdefault.jpg" alt="Bu Da Bu - Comedy TV-series" />
         <div class="video-title">Bu Da Bu - Comedy TV-series</div>
       </a>
-      <a class="video-card" href="https://www.youtube.com/@MasnRealitiSou/videos" target="_blank" rel="noopener noreferrer">
-        <img class="video-thumb" src="https://img.youtube.com/vi/sqKlsTtHzD0/hqdefault.jpg" alt="«Мaşın» reality show" />
+      <a class="video-card" href="https://www.youtube.com/watch?v=CyRFJFBFv9M&t=1s&ab_channel=Ma%C5%9F%C4%B1nRealiti%C5%9Eou" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/CyRFJFBFv9M/hqdefault.jpg" alt="«Мaşın» reality show - Creative Producer" />
         <div class="video-title">«Мaşın» reality show - Creative Producer</div>
       </a>
       <a class="video-card" href="https://www.youtube.com/watch?v=8aXQx-jLUjo&ab_channel=ATVMusic" target="_blank" rel="noopener noreferrer">
@@ -195,8 +233,8 @@
         <img class="video-thumb" src="https://img.youtube.com/vi/m2EVi6VvanA/hqdefault.jpg" alt="Backstage of Nar Mobile Olympics commercial" />
         <div class="video-title">Backstage of Nar Mobile Olympics commercial</div>
       </a>
-      <a class="video-card" href="https://www.youtube.com/@NILNewImageLabel/videos" target="_blank" rel="noopener noreferrer">
-        <img class="video-thumb" src="https://yt3.ggpht.com/ytc/AMLnZu-7F64snSgtrR9_P6C9FCXyOE2b9zV2n5v-FkV=s176-c-k-c0x00ffffff-no-rj" alt="Podcasts" />
+      <a class="video-card" href="https://www.youtube.com/watch?v=sVUh1ek4Mek&t=21s&ab_channel=NIL-NewImageLabel" target="_blank" rel="noopener noreferrer">
+        <img class="video-thumb" src="https://img.youtube.com/vi/sVUh1ek4Mek/hqdefault.jpg" alt="Podcasts" />
         <div class="video-title">Podcasts</div>
       </a>
     </div>
