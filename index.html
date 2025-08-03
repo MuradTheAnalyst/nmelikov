@@ -11,9 +11,6 @@
       background: #121212;
       color: #e0e0e0;
       line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
     a {
       color: #ff4081;
@@ -45,7 +42,6 @@
       font-size: 1rem;
     }
     main {
-      flex-grow: 1;
       max-width: 1100px;
       margin: 30px auto;
       padding: 0 20px;
@@ -108,6 +104,12 @@
       user-select: none;
       text-shadow: 0 0 8px #fff;
     }
+    .kpi {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 5px;
+    }
     footer {
       text-align: center;
       padding: 20px 10px;
@@ -126,17 +128,22 @@
     <a href="#intro">About</a>
     <a href="#music-video-director">Music Videos</a>
     <a href="#commercials">Commercials</a>
+    <a href="#tv-projects">TV Projects</a>
+    <a href="#backstage">Backstage</a>
+    <a href="#music-lyrics">Music & Lyrics</a>
   </nav>
 </header>
 
 <main>
+
   <section id="intro">
     <img src="Nicat_Məlikov.png" alt="Nicat Məlikov" />
     <p>
-      Nicat Məlikov is an Azerbaijani composer, music producer, and music video director.  
-      With a background in philology and extensive experience in the music industry since 2005,  
-      he has worked with renowned artists such as Rauf Əhmədov, Aygün Kazımova, Röya Ayxan, Sevda Ələkbərzadə, and Samir Cavadzadə.  
-      Nicat specializes in songwriting, producing, and directing music videos, blending creativity with technical expertise.
+      Nicat Məlikov is an Azerbaijani composer, music producer, and music video director.
+      With a background in philology and extensive experience in the music industry since 2005,
+      he has worked with renowned artists such as Rauf Əhmədov, Aygün Kazımova, Röya Ayxan,
+      Sevda Ələkbərzadə, and Samir Cavadzadə. Nicat specializes in songwriting, producing, and directing music videos,
+      blending creativity with technical expertise.
     </p>
   </section>
 
@@ -171,6 +178,10 @@
         <img src="https://img.youtube.com/vi/aSURf3V4T44/hqdefault.jpg" alt="Samir Piriyev - Inan" />
         <div class="play-button">▶</div>
       </div>
+      <div class="youtube-container" data-video-id="SlSqi45ONa8">
+        <img src="https://img.youtube.com/vi/SlSqi45ONa8/hqdefault.jpg" alt="KazimCan - O da bele getdi" />
+        <div class="play-button">▶</div>
+      </div>
     </div>
   </section>
 
@@ -180,47 +191,107 @@
       <div>
         <p><strong>Unibank</strong></p>
         <div class="youtube-container" data-video-id="qWHoaVKuYis">
-          <img src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" alt="Unibank" />
+          <img src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" />
           <div class="play-button">▶</div>
         </div>
       </div>
       <div>
         <p><strong>Birkart</strong></p>
         <div class="youtube-container" data-video-id="AQ94w4pjN6w">
-          <img src="https://img.youtube.com/vi/AQ94w4pjN6w/hqdefault.jpg" alt="Birkart" />
+          <img src="https://img.youtube.com/vi/AQ94w4pjN6w/hqdefault.jpg" />
           <div class="play-button">▶</div>
         </div>
       </div>
       <div>
         <p><strong>Baku Electronics</strong></p>
         <div class="youtube-container" data-video-id="NRUp36OEDA4">
-          <img src="https://img.youtube.com/vi/NRUp36OEDA4/hqdefault.jpg" alt="Baku Electronics" />
+          <img src="https://img.youtube.com/vi/NRUp36OEDA4/hqdefault.jpg" />
           <div class="play-button">▶</div>
         </div>
       </div>
       <div>
         <p><strong>Baku Electronics 2</strong></p>
         <div class="youtube-container" data-video-id="hSaBYO5bfX4">
-          <img src="https://img.youtube.com/vi/hSaBYO5bfX4/hqdefault.jpg" alt="Baku Electronics 2" />
+          <img src="https://img.youtube.com/vi/hSaBYO5bfX4/hqdefault.jpg" />
           <div class="play-button">▶</div>
         </div>
       </div>
       <div>
         <p><strong>Kapital Bank – Olar campaign</strong></p>
         <div class="youtube-container" data-video-id="zPov0jDSSFA">
-          <img src="https://img.youtube.com/vi/zPov0jDSSFA/hqdefault.jpg" alt="Kapital Bank Olar" />
+          <img src="https://img.youtube.com/vi/zPov0jDSSFA/hqdefault.jpg" />
           <div class="play-button">▶</div>
         </div>
       </div>
       <div>
         <p><strong>NAR Mobile – Olympics</strong></p>
         <div class="youtube-container" data-video-id="UdBeF5FD4vs">
-          <img src="https://img.youtube.com/vi/UdBeF5FD4vs/hqdefault.jpg" alt="NAR Mobile Olympics" />
+          <img src="https://img.youtube.com/vi/UdBeF5FD4vs/hqdefault.jpg" />
           <div class="play-button">▶</div>
         </div>
       </div>
     </div>
   </section>
+
+  <section id="tv-projects">
+    <h2>TV Projects</h2>
+    <ul>
+      <li><strong>Director</strong> of the <em>“Bu Da Bu”</em> comedy series – <a href="https://www.youtube.com/playlist?list=PLiPtlCClgYS_miQSENujvthvY87wqaF9o" target="_blank">Watch Playlist</a></li>
+      <li><strong>Creative Producer</strong> of the <em>“Maşın” Reality Show</em> – <a href="https://www.youtube.com/@MasnRealitiSou/videos" target="_blank">Watch Videos</a></li>
+      <li><strong>Director & Scriptwriter</strong> – “New Year” TV Show – <a href="https://www.youtube.com/playlist?list=PL7Sxku7Kkg9IiDC-fST35pjRyK767MhgP" target="_blank">Watch Playlist</a></li>
+    </ul>
+  </section>
+
+  <section id="backstage">
+    <h2>Backstage & Others</h2>
+    <ul>
+      <li>Backstage of the music video shoot – <a href="https://www.youtube.com/watch?v=qWHoaVKuYis" target="_blank">Watch</a></li>
+      <li>Backstage of “Nar Mobile” Olympics – <a href="https://www.youtube.com/watch?v=m2EVi6VvanA" target="_blank">Watch</a></li>
+      <li>Podcasts – <a href="https://www.youtube.com/@NILNewImageLabel/videos" target="_blank">Watch Channel</a></li>
+    </ul>
+  </section>
+
+  <section id="music-lyrics">
+    <h2>Music & Lyrics</h2>
+    <div class="video-grid">
+      <div>
+        <div class="youtube-container" data-video-id="4BKBK-kdHS8">
+          <img src="https://img.youtube.com/vi/4BKBK-kdHS8/hqdefault.jpg" />
+          <div class="play-button">▶</div>
+        </div>
+        <div class="kpi">+200K views</div>
+      </div>
+      <div>
+        <div class="youtube-container" data-video-id="NjvNZuN5rJs">
+          <img src="https://img.youtube.com/vi/NjvNZuN5rJs/hqdefault.jpg" />
+          <div class="play-button">▶</div>
+        </div>
+        <div class="kpi">+300K views</div>
+      </div>
+      <div>
+        <div class="youtube-container" data-video-id="D3U7pj-D7Yg">
+          <img src="https://img.youtube.com/vi/D3U7pj-D7Yg/hqdefault.jpg" />
+          <div class="play-button">▶</div>
+        </div>
+        <div class="kpi">+1M views</div>
+      </div>
+      <div>
+        <div class="youtube-container" data-video-id="N1s9_RQL6Zw">
+          <img src="https://img.youtube.com/vi/N1s9_RQL6Zw/hqdefault.jpg" />
+          <div class="play-button">▶</div>
+        </div>
+        <div class="kpi">+250K views</div>
+      </div>
+      <div>
+        <div class="youtube-container" data-video-id="m_RPTLJ6o80">
+          <img src="https://img.youtube.com/vi/m_RPTLJ6o80/hqdefault.jpg" />
+          <div class="play-button">▶</div>
+        </div>
+        <div class="kpi">+500K views</div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
