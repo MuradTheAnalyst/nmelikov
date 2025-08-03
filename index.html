@@ -3,109 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nicat Məlikov – Music Producer & Director</title>
+  <title>Nicat Məlikov - Visit Card</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #151515;
+      background: #0e1014;
       color: #e0e0e0;
-      line-height: 1.6;
-      padding: 0 20px 40px;
-      max-width: 1080px;
-      margin-left: auto;
-      margin-right: auto;
-      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0 1rem 3rem;
     }
-    /* Sticky top menu */
     nav {
+      background: #15181f;
       position: sticky;
       top: 0;
-      background: #222;
-      padding: 10px 20px;
-      box-shadow: 0 2px 8px #000;
-      z-index: 999;
+      z-index: 1000;
       display: flex;
       justify-content: center;
-      gap: 24px;
+      gap: 1.5rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #333;
     }
     nav a {
-      color: #ff8800;
+      color: #61dafb;
       text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
+      transition: color 0.3s ease;
     }
-    nav a:hover,
-    nav a:focus {
-      background-color: #ff8800;
-      color: #151515;
-      outline: none;
+    nav a:hover {
+      color: #21a1f1;
     }
 
-    h1, h2 {
-      color: #ff8800;
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
+    header.bio {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 0;
+      max-width: 900px;
+      margin: 0 auto;
+      flex-wrap: wrap;
     }
-    .bio {
-      max-width: 720px;
-      margin: 20px auto 40px;
-      background: #222;
-      border-radius: 8px;
-      padding: 20px 30px;
-      box-shadow: 0 0 12px #ff8800aa;
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #61dafb;
+      flex-shrink: 0;
     }
-    .bio p {
-      font-size: 1.1rem;
-      text-align: center;
+    .bio-text {
+      max-width: 700px;
+    }
+    .bio-text h1 {
+      margin: 0 0 0.3rem;
+      font-size: 2.25rem;
+      color: #61dafb;
+    }
+    .bio-text p {
+      margin: 0.3rem 0;
+      font-size: 1.05rem;
+      line-height: 1.4;
     }
     section {
-      margin-bottom: 50px;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #61dafb;
+      padding-bottom: 0.3rem;
     }
     .videos-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-      justify-items: center;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
     }
     .video-card {
-      background: #222;
+      background: #15181f;
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 0 12px #ff8800aa;
-      width: 280px;
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.2s ease;
+      box-shadow: 0 0 10px rgba(97, 218, 251, 0.3);
+      text-decoration: none;
+      color: #e0e0e0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .video-card:hover {
       transform: scale(1.03);
-      box-shadow: 0 0 18px #ff8800ff;
+      box-shadow: 0 0 20px #61dafb;
     }
     .video-thumb {
       width: 100%;
-      height: 158px; /* 16:9 aspect ratio for 280px width */
+      height: 158px; /* 16:9 ratio for ~280px width */
       object-fit: cover;
       display: block;
+      border-bottom: 1px solid #333;
     }
     .video-title {
-      padding: 10px 15px 5px;
       font-weight: 600;
       font-size: 1rem;
-      color: #fff;
+      margin: 0.7rem 0 0.3rem;
+      padding: 0 0.5rem;
+      text-align: center;
     }
     .video-views {
-      color: #ffbb55;
-      font-size: 0.9rem;
-      padding-bottom: 12px;
+      font-size: 0.85rem;
+      color: #7dbcea;
+      padding-bottom: 0.7rem;
+      text-align: center;
     }
-    a {
+    section#contact {
+      max-width: 900px;
+      margin: 3rem auto 1rem;
+      padding: 1.5rem;
+      background: #15181f;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(97, 218, 251, 0.3);
+    }
+    section#contact h2 {
+      margin-bottom: 1rem;
+      color: #61dafb;
+    }
+    section#contact a {
+      color: #61dafb;
+      font-size: 1.2rem;
       text-decoration: none;
-      color: inherit;
+      font-weight: 600;
+    }
+    section#contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -118,15 +148,18 @@
     <a href="#tv-projects">TV Projects</a>
     <a href="#backstage-others">Backstage & Others</a>
     <a href="#music-lyrics">Music & Lyrics</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <h1>Nicat Məlikov</h1>
-
-  <section id="bio" class="bio">
-    <p>
-      Nicat Məlikov is an Azerbaijani music producer, composer, and director born on June 1, 1986, in Baku. With a background in philology and over 15 years of experience in music and video production, Nicat has collaborated with prominent Azerbaijani artists such as Rauf Əhmədov, Aygün Kazımova, Röya, Sevda Ələkbərzadə, and Samir Piriyev. Known for his work in both music videos and TV projects, he has contributed significantly to Azerbaijan’s contemporary music scene.
-    </p>
-  </section>
+  <header id="bio" class="bio">
+    <img src="nmelikov/Nicat_Məlikov.png" alt="Nicat Məlikov" class="profile-pic" />
+    <div class="bio-text">
+      <h1>Nicat Məlikov</h1>
+      <p>Professional Music Producer & Video Director</p>
+      <p>Specializing in music video direction, commercials, and TV projects with over 15 years of experience.</p>
+      <p>Based in Baku, Azerbaijan.</p>
+    </div>
+  </header>
 
   <section id="music-video-director">
     <h2>Music Video Director</h2>
@@ -206,32 +239,32 @@
 
   <section id="tv-projects">
     <h2>TV Projects</h2>
-    <div class="videos-grid">
+    <div class="videos-grid" style="grid-template-columns: repeat(3, 1fr);">
       <a class="video-card" href="https://www.youtube.com/watch?v=ycLUn5n8b6E&ab_channel=MGP%28MGroupProduction%29" target="_blank" rel="noopener noreferrer">
         <img class="video-thumb" src="https://img.youtube.com/vi/ycLUn5n8b6E/hqdefault.jpg" alt="Bu Da Bu - Comedy TV-series" />
         <div class="video-title">Bu Da Bu - Comedy TV-series</div>
       </a>
       <a class="video-card" href="https://www.youtube.com/watch?v=CyRFJFBFv9M&t=1s&ab_channel=Ma%C5%9F%C4%B1nRealiti%C5%9Eou" target="_blank" rel="noopener noreferrer">
-        <img class="video-thumb" src="https://img.youtube.com/vi/CyRFJFBFv9M/hqdefault.jpg" alt="«Мaşın» reality show - Creative Producer" />
-        <div class="video-title">«Мaşın» reality show - Creative Producer</div>
+        <img class="video-thumb" src="https://img.youtube.com/vi/CyRFJFBFv9M/hqdefault.jpg" alt="«Мaşın» Reality Show - Creative Producer" />
+        <div class="video-title">«Мaşın» Reality Show - Creative Producer</div>
       </a>
       <a class="video-card" href="https://www.youtube.com/watch?v=8aXQx-jLUjo&ab_channel=ATVMusic" target="_blank" rel="noopener noreferrer">
-        <img class="video-thumb" src="https://img.youtube.com/vi/8aXQx-jLUjo/hqdefault.jpg" alt="New Year - Director & Script Writer" />
-        <div class="video-title">New Year - Director & Script Writer</div>
+        <img class="video-thumb" src="https://img.youtube.com/vi/8aXQx-jLUjo/hqdefault.jpg" alt="New Year Show - Director & Script Writer" />
+        <div class="video-title">New Year Show - Director & Script Writer</div>
       </a>
     </div>
   </section>
 
   <section id="backstage-others">
     <h2>Backstage & Others</h2>
-    <div class="videos-grid">
+    <div class="videos-grid" style="grid-template-columns: repeat(3, 1fr);">
       <a class="video-card" href="https://www.youtube.com/watch?v=qWHoaVKuYis" target="_blank" rel="noopener noreferrer">
-        <img class="video-thumb" src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" alt="Backstage of music video shooting" />
-        <div class="video-title">Backstage of music video shooting</div>
+        <img class="video-thumb" src="https://img.youtube.com/vi/qWHoaVKuYis/hqdefault.jpg" alt="Backstage of the music video shooting" />
+        <div class="video-title">Backstage of the music video shooting</div>
       </a>
       <a class="video-card" href="https://www.youtube.com/watch?v=m2EVi6VvanA" target="_blank" rel="noopener noreferrer">
-        <img class="video-thumb" src="https://img.youtube.com/vi/m2EVi6VvanA/hqdefault.jpg" alt="Backstage of Nar Mobile Olympics commercial" />
-        <div class="video-title">Backstage of Nar Mobile Olympics commercial</div>
+        <img class="video-thumb" src="https://img.youtube.com/vi/m2EVi6VvanA/hqdefault.jpg" alt="Backstage of the “Nar Mobile” Olympics commercial shooting" />
+        <div class="video-title">Backstage of the “Nar Mobile” Olympics commercial shooting</div>
       </a>
       <a class="video-card" href="https://www.youtube.com/watch?v=sVUh1ek4Mek&t=21s&ab_channel=NIL-NewImageLabel" target="_blank" rel="noopener noreferrer">
         <img class="video-thumb" src="https://img.youtube.com/vi/sVUh1ek4Mek/hqdefault.jpg" alt="Podcasts" />
@@ -264,6 +297,11 @@
         <div class="video-title">+500K views</div>
       </a>
     </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nctmlkv@gmail.com">nctmlkv@gmail.com</a></p>
   </section>
 
 </body>
