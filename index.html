@@ -3,249 +3,205 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nicat Məlikov – Music Producer</title>
+  <title>Nicat Məlikov – Music Producer & Director</title>
   <style>
-    /* Reset and base */
-    * {
-      box-sizing: border-box;
-    }
-    body, html {
+    /* Reset & base */
+    body {
       margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #eee;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     a {
-      color: inherit;
+      color: #ff4081;
       text-decoration: none;
     }
     a:hover {
-      color: #ff4081;
+      text-decoration: underline;
     }
 
-    /* Navbar */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #1e1e1e;
+    header {
+      background-color: #1f1f1f;
+      padding: 15px 20px;
       display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ff4081;
+      position: sticky;
+      top: 0;
       z-index: 1000;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
+
+    header h1 {
       margin: 0;
-      padding: 0;
-    }
-    nav li {
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-    nav li:hover {
+      font-weight: 700;
+      font-size: 1.5rem;
       color: #ff4081;
     }
 
-    /* Container to offset content below navbar */
-    .container {
+    nav a {
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    main {
+      flex-grow: 1;
       max-width: 900px;
-      margin: 100px auto 50px;
+      margin: 30px auto;
       padding: 0 20px;
     }
 
-    /* Section styling */
     section {
-      margin-bottom: 70px;
+      margin-bottom: 50px;
     }
 
-    /* Header */
-    .header {
+    h2 {
+      color: #ff4081;
+      font-weight: 700;
+      border-bottom: 2px solid #ff4081;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    /* Intro */
+    #intro {
       text-align: center;
     }
-    .header .photo {
-      width: 180px;
-      height: 180px;
+
+    #intro img {
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto 20px;
-      border: 4px solid #ff4081;
+      border: 3px solid #ff4081;
+      margin-bottom: 15px;
+      object-fit: cover;
       box-shadow: 0 0 15px #ff4081aa;
     }
-    .header .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .header h1 {
-      font-size: 2.8rem;
-      margin: 0 0 8px;
-      color: #ff4081;
-    }
-    .header p {
-      font-size: 1.25rem;
-      font-style: italic;
-      color: #bbb;
-      margin: 0;
-    }
 
-    /* About Section */
-    .about dl {
-      max-width: 500px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: max-content 1fr;
-      gap: 10px 20px;
-      color: #ccc;
-    }
-    .about dt {
-      font-weight: 700;
-      color: #ff4081;
-      text-align: right;
-    }
-    .about dd {
-      margin: 0;
-    }
-
-    /* Works Section */
-    .works ul {
+    #intro p {
+      font-size: 1.1rem;
       max-width: 600px;
       margin: 0 auto;
-      padding-left: 20px;
-      color: #ddd;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    .works li {
-      margin-bottom: 10px;
-    }
-    .works h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #ff4081;
-      font-weight: 700;
     }
 
-    /* Contact Section */
-    .contact {
+    /* YouTube embed */
+    .youtube-container {
+      cursor: pointer;
+      position: relative;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(255, 64, 129, 0.4);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .youtube-container img {
+      width: 100%;
+      display: block;
+    }
+
+    .youtube-container div.play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 64px;
+      color: rgba(255, 64, 129, 0.8);
+      pointer-events: none;
+      user-select: none;
+      text-shadow: 0 0 8px #fff;
+    }
+
+    footer {
       text-align: center;
-    }
-    .contact h2 {
-      color: #ff4081;
-      margin-bottom: 20px;
-    }
-    .contact p {
-      font-size: 1.1rem;
-      margin-bottom: 12px;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 12px 22px;
-      border-radius: 50px;
-      border: 2px solid #ff4081;
-      font-weight: 600;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .contact a:hover {
-      background-color: #ff4081;
-      color: #121212;
+      padding: 20px 10px;
+      background-color: #1f1f1f;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #ff4081;
     }
 
     /* Responsive */
-    @media (max-width: 500px) {
-      nav ul {
-        gap: 15px;
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-      .header h1 {
-        font-size: 2rem;
+
+      nav {
+        margin-top: 10px;
       }
-      .header .photo {
-        width: 140px;
-        height: 140px;
+
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
       }
-      .about dl {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .about dt {
-        text-align: center;
+
+      #intro img {
+        width: 150px;
+        height: 150px;
       }
     }
   </style>
 </head>
 <body>
 
+<header>
+  <h1>Nicat Məlikov</h1>
   <nav>
-    <ul>
-      <li><a href="#home" tabindex="0">Ana Səhifə</a></li>
-      <li><a href="#about" tabindex="0">Haqqında</a></li>
-      <li><a href="#works" tabindex="0">İşlər</a></li>
-      <li><a href="#contact" tabindex="0">Əlaqə</a></li>
-    </ul>
+    <a href="#intro">About</a>
+    <a href="#music-video-director">Music Video Director</a>
   </nav>
+</header>
 
-  <div class="container">
+<main>
+  <section id="intro">
+    <img src="assets/nicat_melikov.png" alt="Nicat Məlikov" />
+    <p>
+      Azərbaycan bəstəkarı, prodüseri və rejissoru. Görkəmli sənətkarların söz və musiqi müəllifi.
+      Fəaliyyət sahələri: Kompozitor, Rejissor. Təhsil: Filolog, Ali təhsil.
+    </p>
+  </section>
 
-    <section id="home" class="header" tabindex="-1">
-      <div class="photo">
-        <img src="assets/nicat_melikov.png" alt="Nicat Məlikov" />
-      </div>
-      <h1>Nicat Məlikov</h1>
-      <p>Music Producer & Composer</p>
-    </section>
+  <section id="music-video-director">
+    <h2>Music Video Director</h2>
+    <div class="youtube-container" data-video-id="uvi_Kjpn0HE">
+      <img src="https://img.youtube.com/vi/uvi_Kjpn0HE/hqdefault.jpg" alt="Rauf - Mənfi qırx dərəcə (-40) Music Video Thumbnail" />
+      <div class="play-button">▶</div>
+    </div>
+  </section>
+</main>
 
-    <section id="about" class="about" tabindex="-1">
-      <h2>Haqqında</h2>
-      <dl>
-        <dt>Doğum tarixi:</dt>
-        <dd>1 iyun 1986</dd>
+<footer>
+  &copy; 2025 Nicat Məlikov. All rights reserved.
+</footer>
 
-        <dt>Yerləşmə:</dt>
-        <dd>Bakı, Azərbaycan</dd>
-
-        <dt>İxtisas:</dt>
-        <dd>Kompozitor, Rejissor</dd>
-
-        <dt>Fəaliyyət illəri:</dt>
-        <dd>2005 - indiyə kimi</dd>
-      </dl>
-    </section>
-
-    <section id="works" class="works" tabindex="-1">
-      <h2>Seçilmiş İşlər</h2>
-      <ul>
-        <li>Rauf - Mənfi qırx dərəcə (-40)</li>
-        <li>Rauf & Aygün Kazımova - Yaraşdın mənə</li>
-        <li>Samir Cavadzade - Guci Guci</li>
-        <li>Rauf & Röya - Olar</li>
-        <li>Sevda Ələkbərzadə — Ən</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="contact" tabindex="-1">
-      <h2>Əlaqə</h2>
-      <p>Email: <a href="mailto:nicat@example.com">nicat@example.com</a></p>
-      <p>
-        Sosial Media:
-        <a href="https://www.instagram.com/nicatmelikov" target="_blank" rel="noopener noreferrer">Instagram</a> |
-        <a href="https://www.linkedin.com/in/nicatmelikov" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
-    </section>
-
-  </div>
+<script>
+  document.querySelectorAll('.youtube-container').forEach(container => {
+    container.addEventListener('click', () => {
+      const videoId = container.getAttribute('data-video-id');
+      const iframe = document.createElement('iframe');
+      iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.width = '100%';
+      iframe.style.height = '315px';
+      iframe.style.borderRadius = '8px';
+      container.innerHTML = '';
+      container.appendChild(iframe);
+    });
+  });
+</script>
 
 </body>
 </html>
-
-
